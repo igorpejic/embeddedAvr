@@ -20,12 +20,11 @@
   <FILE>C:\Users\User\Desktop\Embedded systems\blinkmodes\AssemblerApplication3\Debug\AssemblerApplication3.lss</FILE>
  </OUTPUT_FILES>
  <LABELS>
-  <reset><FILE>C:\Users\User\Desktop\Embedded systems\blinkmodes\AssemblerApplication3\AssemblerApplication3.asm</FILE><LINE>20</LINE></reset>
-  <mode0><FILE>C:\Users\User\Desktop\Embedded systems\blinkmodes\AssemblerApplication3\AssemblerApplication3.asm</FILE><LINE>27</LINE></mode0>
-  <delay><FILE>C:\Users\User\Desktop\Embedded systems\blinkmodes\AssemblerApplication3\AssemblerApplication3.asm</FILE><LINE>78</LINE></delay>
-  <increase><FILE>C:\Users\User\Desktop\Embedded systems\blinkmodes\AssemblerApplication3\AssemblerApplication3.asm</FILE><LINE>62</LINE></increase>
-  <mode1><FILE>C:\Users\User\Desktop\Embedded systems\blinkmodes\AssemblerApplication3\AssemblerApplication3.asm</FILE><LINE>41</LINE></mode1>
-  <mode2><FILE>C:\Users\User\Desktop\Embedded systems\blinkmodes\AssemblerApplication3\AssemblerApplication3.asm</FILE><LINE>51</LINE></mode2>
-  <delay_loop><FILE>C:\Users\User\Desktop\Embedded systems\blinkmodes\AssemblerApplication3\AssemblerApplication3.asm</FILE><LINE>83</LINE></delay_loop>
+  <main1><FILE>C:\Users\User\Desktop\Embedded systems\blinkmodes\AssemblerApplication3\AssemblerApplication3.asm</FILE><LINE>28</LINE></main1>
+  <delay><FILE>C:\Users\User\Desktop\Embedded systems\blinkmodes\AssemblerApplication3\AssemblerApplication3.asm</FILE><LINE>69</LINE></delay>
+  <btnchk><FILE>C:\Users\User\Desktop\Embedded systems\blinkmodes\AssemblerApplication3\AssemblerApplication3.asm</FILE><LINE>61</LINE></btnchk>
+  <main2><FILE>C:\Users\User\Desktop\Embedded systems\blinkmodes\AssemblerApplication3\AssemblerApplication3.asm</FILE><LINE>43</LINE></main2>
+  <loop2><FILE>C:\Users\User\Desktop\Embedded systems\blinkmodes\AssemblerApplication3\AssemblerApplication3.asm</FILE><LINE>45</LINE></loop2>
+  <loop><FILE>C:\Users\User\Desktop\Embedded systems\blinkmodes\AssemblerApplication3\AssemblerApplication3.asm</FILE><LINE>73</LINE></loop>
  </LABELS>
 </ASSEMBLER_INFO>

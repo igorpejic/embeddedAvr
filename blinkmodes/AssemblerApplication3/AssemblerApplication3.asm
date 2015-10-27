@@ -1,3 +1,5 @@
+
+
 /*
  * AssemblerApplication3.asm
  *
@@ -5,84 +7,74 @@
  *   Author: User
  */ 
 
- .equ LED_PORT=PORTA
- .equ LED_PORT_DDR=DDRA
- .equ BUT_PORT=PORTB
- .equ BUT_PIN_DDR=PINB
- .def tmp=r23
- .def temp=r18
- .def mode=r26
+.equ LED_PORT=PORTA
+.equ LED_PORT_DDR=DDRA
+.equ BUT_DDR=DDRB
+.equ BUT_PIN=PINB
 
-
- .cseg
-
- rjmp reset
- reset:
+.def tmp=r16
+.def temp=r17
+.def mode=r19
+;init
 	ldi tmp, 0xff
 	out LED_PORT_DDR, tmp
-	ldi tmp, 0
-	out BUT_PIN_DDR, tmp
-ldi tmp, 0xff
-
-mode0:
-
-	ldi tmp, 0b01010101
+	ldi tmp, 0x00
+	out BUT_DDR, tmp
+	ldi tmp, low(RAMEND)
+	out SPL, tmp
+	ldi tmp, high(RAMEND)
+	out SPH, tmp
+	ldi tmp, 0b00000001
+main1:
+	rcall delay
+	
+	ldi tmp, 0x0f
 	out LED_PORT, tmp
 	rcall delay
-	ldi tmp, 0b10101010
+	ldi tmp, 0xf0
 	out LED_PORT, tmp
 	rcall delay
+	rcall btnchk
 	ldi temp, 0x01
-	in r24, BUT_PORT
-	cp r24, temp
-	breq increase
-rjmp mode0
-
-mode1:
-	ldi temp, 0b00000001
-	in r24, BUT_PORT
-	cp r24, temp
-	breq increase
-	rol tmp
-	out LED_PORT, tmp
-	rcall delay
-rjmp mode1
-
-mode2:
-	ldi temp, 0x01
-	in r24, BUT_PORT
-	cp r24, temp
-	breq increase
-	ldi tmp, 0b11111110
-	rol tmp
-	out LED_PORT, tmp
-	rcall delay
-rjmp mode2
-
-increase:
-	inc mode
-	ldi temp, 0
 	cp mode, temp
-	breq mode0
+	brne main2
+rjmp main1
+
+main2:
+	ldi tmp, 0x01
+	loop2:
+		rol tmp
+		out LED_PORT, tmp
+		rcall delay
+		rcall btnchk
+		ldi temp, 0b10000000
+		cp mode, temp
+		brne main1
+		
+
+		cp temp, tmp
+		brne loop2
+		ldi tmp, 0b00000001
+
+rjmp main2
+
+btnchk:
+	in r18, BUT_PIN
+	sbrs r18, 0
+	ret
 	ldi temp, 1
-	ldi tmp, 0b11111110
-	cp mode, temp
-	breq mode1
-	ldi temp, 2
-	cp mode, temp
-	breq mode2
-	clr mode
-	clr tmp
-	rjmp mode0
+	eor mode, temp
+	ret
 
 delay:
 	clr r20
 	clr r21
-	clr r22
-	
-	delay_loop:
+	ldi r22, 20
+	loop:
 		dec r20
-		brne delay_loop
+		brne loop
 		dec r21
-		brne delay_loop
+		brne loop
+		dec r22
+		brne loop
 	ret

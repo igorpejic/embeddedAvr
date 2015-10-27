@@ -1,5 +1,5 @@
 
-AVRASM ver. 2.1.52  C:\Users\User\Desktop\Embedded systems\blinkmodes\AssemblerApplication3\AssemblerApplication3.asm Tue Oct 27 16:36:13 2015
+AVRASM ver. 2.1.52  C:\Users\User\Desktop\Embedded systems\blinkmodes\AssemblerApplication3\AssemblerApplication3.asm Tue Oct 27 19:38:18 2015
 
 
 EQU  SIGNATURE_000 0000001e
@@ -606,15 +606,14 @@ EQU  SPMRaddr     00000028
 EQU  INT_VECTORS_SIZE 0000002a
 EQU  LED_PORT     0000001b
 EQU  LED_PORT_DDR 0000001a
-EQU  BUT_PORT     00000018
-EQU  BUT_PIN_DDR  00000016
-DEF  tmp          r23
-DEF  temp         r18
-DEF  mode         r26
-CSEG reset        00000001
-CSEG mode0        00000006
-CSEG delay        00000030
-CSEG increase     00000022
-CSEG mode1        00000011
-CSEG mode2        00000019
-CSEG delay_loop   00000033
+EQU  BUT_DDR      00000017
+EQU  BUT_PIN      00000016
+DEF  tmp          r16
+DEF  temp         r17
+DEF  mode         r19
+CSEG main1        00000009
+CSEG delay        00000027
+CSEG btnchk       00000021
+CSEG main2        00000015
+CSEG loop2        00000016
+CSEG loop         0000002a
