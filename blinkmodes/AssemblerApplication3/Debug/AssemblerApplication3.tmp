@@ -1,0 +1,31 @@
+<ASSEMBLER_INFO>
+ <VERSION>2.1.52</VERSION>
+ <DEVICE>"ATmega16A"</DEVICE>
+ <WORKING_DIR>C:\Users\User\Desktop\Embedded systems\blinkmodes\AssemblerApplication3\Debug</WORKING_DIR>
+ <INCLUDE_PATH>
+  <DIR>D:\programs\atmel\extensions\Atmel\AVRAssembler\2.1.51.64\AvrAssembler/Include</DIR>
+ </INCLUDE_PATH>
+ <SOURCE_FILE>C:\Users\User\Desktop\Embedded systems\blinkmodes\AssemblerApplication3\AssemblerApplication3.asm</SOURCE_FILE>
+ <INCLUDED_FILES>
+  <FILE>D:\programs\atmel\extensions\Atmel\AVRAssembler\2.1.51.64\AvrAssembler/Include\m16adef.inc</FILE>
+ </INCLUDED_FILES>
+ <OBJECT_FILES>
+  <FILE>C:\Users\User\Desktop\Embedded systems\blinkmodes\AssemblerApplication3\Debug/AssemblerApplication3.obj</FILE>
+ </OBJECT_FILES>
+ <HEX_FILES>
+  <FILE>C:\Users\User\Desktop\Embedded systems\blinkmodes\AssemblerApplication3\Debug/AssemblerApplication3.hex</FILE>
+ </HEX_FILES>
+ <OUTPUT_FILES>
+  <FILE>C:\Users\User\Desktop\Embedded systems\blinkmodes\AssemblerApplication3\Debug\AssemblerApplication3.map</FILE>
+  <FILE>C:\Users\User\Desktop\Embedded systems\blinkmodes\AssemblerApplication3\Debug\AssemblerApplication3.lss</FILE>
+ </OUTPUT_FILES>
+ <LABELS>
+  <reset><FILE>C:\Users\User\Desktop\Embedded systems\blinkmodes\AssemblerApplication3\AssemblerApplication3.asm</FILE><LINE>20</LINE></reset>
+  <mode0><FILE>C:\Users\User\Desktop\Embedded systems\blinkmodes\AssemblerApplication3\AssemblerApplication3.asm</FILE><LINE>27</LINE></mode0>
+  <delay><FILE>C:\Users\User\Desktop\Embedded systems\blinkmodes\AssemblerApplication3\AssemblerApplication3.asm</FILE><LINE>78</LINE></delay>
+  <increase><FILE>C:\Users\User\Desktop\Embedded systems\blinkmodes\AssemblerApplication3\AssemblerApplication3.asm</FILE><LINE>62</LINE></increase>
+  <mode1><FILE>C:\Users\User\Desktop\Embedded systems\blinkmodes\AssemblerApplication3\AssemblerApplication3.asm</FILE><LINE>41</LINE></mode1>
+  <mode2><FILE>C:\Users\User\Desktop\Embedded systems\blinkmodes\AssemblerApplication3\AssemblerApplication3.asm</FILE><LINE>51</LINE></mode2>
+  <delay_loop><FILE>C:\Users\User\Desktop\Embedded systems\blinkmodes\AssemblerApplication3\AssemblerApplication3.asm</FILE><LINE>83</LINE></delay_loop>
+ </LABELS>
+</ASSEMBLER_INFO>
